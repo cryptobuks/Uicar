@@ -1,5 +1,7 @@
-# Uicar 
+# Ionic 4 Firebase Kit started
 
+Ionic 4 y firebase multiplatforma started kit with login and register with firebase
+This is a simple way to get a register and login with ionic 4 and firebase, we use the new router module 
 
 ## Setup 
 
@@ -14,6 +16,3 @@ You can tested in Ionic devapp
 
 
 
-## Desing
-
-<img src="https://github.com/davidbarrero38/Uicar/blob/master/src/assets/Captura%20de%20pantalla%202019-02-02%20a%20las%2018.26.17.png?raw=true">

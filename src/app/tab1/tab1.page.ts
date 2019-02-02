@@ -10,27 +10,12 @@ import { Router } from '@angular/router';
 })
 export class Tab1Page {
 
-  displayName: string;
-  url: string;
 
-
-  constructor(private _auth: AngularFireAuth,
-    private router: Router , ) {
-      this._auth.authState.subscribe(user => {
-        if (!user) {
-          this.displayName = null;
-          console.log('Name ' + this.displayName);
-          return;
-        }
-        this.displayName = user.displayName;
-        this.url = user.photoURL;
-        console.log('Name ' + this.url);
-      });
-     }
-
+  constructor(private aut: AngularFireAuth,
+    private router: Router) { }
 
   async signOut() {
-    const res = await this._auth.auth.signOut();
+    const res = await this.aut.auth.signOut();
     console.log(res);
     this.router.navigateByUrl('/login');
   }
