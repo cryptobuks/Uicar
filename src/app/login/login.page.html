@@ -4,22 +4,42 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content padding text-center>
-    <img style="margin:auto;" src="assets/icon/ionic_firebase-logo.png" alt="">
+<ion-content padding text-center class="isesion">
+
+    <h4>Inicia sesión</h4>
+    <h1>Uicar</h1>
     <ion-list>
 
         <ion-item>
-            <ion-label floating>Username</ion-label>
-            <ion-input type="text" [(ngModel)]="username"></ion-input>
+            <ion-input type="text" placeholder="Email" [(ngModel)]="username"></ion-input>
+
         </ion-item>
 
         <ion-item>
-            <ion-label floating>Password</ion-label>
-            <ion-input type="password" [(ngModel)]="password"></ion-input>
+            <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+            <ion-icon name="eye" item-right></ion-icon>
         </ion-item>
 
     </ion-list>
-    <ion-button fill="solid" expand="block" color="primary" (click)="login()">Login</ion-button>
-    <ion-button fill="solid" expand="block" color="danger" (click)="loginGmail()">Gmail</ion-button>
-    <p (click)="goRegister()">register here</p>
+    <br>
+
+    <ion-button fill="solid" expand="block" color="primary" (click)="login()">Entrar</ion-button>
+    <br>
+    <br>
+
+
+
+
+
+
+    <div (click)="loginGmail()" class="tc flex jusify-center align-center flex-wrap w-100">
+        <div class="w-100 tc flex align-center justify-center">
+            <button class="buttone google flex justify-center align-center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" class="flex self-center pr2"  > Inicia con google</button>
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <p class="register-text" (click)="goRegister()">No tienes cuenta ?<a> Registrate</a> </p>
 </ion-content>
