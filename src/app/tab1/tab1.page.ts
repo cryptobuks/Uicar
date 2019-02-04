@@ -4,6 +4,7 @@ import { auth } from 'firebase/app';
 import { Router } from '@angular/router';
 import { ServicesService } from '../services.service';
 
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',

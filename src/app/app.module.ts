@@ -14,9 +14,10 @@ import { AppComponent } from './app.component';
 import Config from './firebase';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { ComponentComponent } from './component/component.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ComponentComponent],
   entryComponents: [],
   imports: [BrowserModule,
     IonicModule.forRoot(),
