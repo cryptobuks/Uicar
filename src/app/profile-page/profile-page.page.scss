@@ -1,0 +1,77 @@
+.circle {
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 1em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    // border: 1px solid #eee;
+    box-shadow: 0 2px 5px #F2F0F0;
+}
+
+:host {
+    ion-content {
+        --background: url('/assets/background22.png') no-repeat;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #3B455A;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #E45454;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.ubication {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3B455A;
+}
+
+.carta {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #E45454;
+}
+
+.cartadesc {
+    margin-top: -15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3B455A;
+}
+
+.cartaicon {
+    margin-bottom: 0px!important;
+}
+
+.noprofile {
+    text-align: center;
+}
+
+.notrayect {
+    max-width: 100px;
+    margin-top: -30px;
+}
+
+.notrayecto {
+    margin-top: -20px;
+    color: #E45454;
+}
+
+.noprofile h3 {
+    text-align: center;
+    color: #3B455A;
+}

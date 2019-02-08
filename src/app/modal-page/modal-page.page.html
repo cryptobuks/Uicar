@@ -1,0 +1,32 @@
+<ion-header no-border>
+    <ion-toolbar no-border>
+        <ion-title style=" color: #E45454;font-size: 24px;font-weight: bold;text-align: center">Opciones
+        </ion-title>
+
+        <ion-buttons slot="end">
+            <ion-icon src="/assets/icons/cancel-music.svg" (click)="dismiss()" padding></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding *ngFor="let item of links">
+    <br>
+    <br>
+
+    <ion-button color="secondary" expand="full" (click)="gotopage(item.terms)" size="large">
+        <ion-icon slot="end" size="large" name="bookmarks"></ion-icon>
+        Políticas privacidad
+    </ion-button>
+    <br>
+    <ion-button color="light" expand="full" size="large" (click)="gotopage(item.url)">
+        <ion-icon slot="end" size="large" name="help-circle-outline"></ion-icon>
+        Ayuda
+    </ion-button>
+    <br>
+    <ion-button (click)="signOut()" color="primary" expand="full" size="large">
+        <ion-icon slot="end" size="large" name="log-out"></ion-icon>
+        Cerrar sesión
+    </ion-button>
+
+
+</ion-content>

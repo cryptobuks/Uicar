@@ -35,7 +35,7 @@ export class AppComponent {
       .subscribe(
         user => {
           if (user) {
-            this.rout.navigateByUrl('tabs/tab1');
+            // this.rout.navigateByUrl('tabs/tab1');
           } else {
             this.rout.navigateByUrl('/login');
           }

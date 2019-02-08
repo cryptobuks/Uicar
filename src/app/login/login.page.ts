@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
 import { Router } from '@angular/router';
+import { ServicesService } from '../services.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,9 @@ export class LoginPage {
   username: string ;
   password: string ;
 
-  constructor(public afs: AngularFireAuth, public rout: Router) { }
+  constructor(public afs: AngularFireAuth, public rout: Router , public service: ServicesService) {
+    this.service.initializeApp();
+   }
 
   async login() {
 
@@ -22,7 +25,7 @@ export class LoginPage {
     try {
       const res = await this.afs.auth.signInWithEmailAndPassword(username, password);
       console.log(res);
-      this.rout.navigateByUrl('tabs/tab1');
+      this.rout.navigateByUrl('/');
     } catch (error) {
       console.log(error);
     }
@@ -31,7 +34,7 @@ export class LoginPage {
     try {
       const res = await this.afs.auth.signInWithPopup(new auth.GoogleAuthProvider());
       console.log(res);
-      this.rout.navigateByUrl('tabs/tab1');
+      this.rout.navigateByUrl('/');
     } catch (error) {
       console.log(error);
     }

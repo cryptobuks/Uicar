@@ -15,11 +15,11 @@ import { HttpModule } from '@angular/http';
 import Config from './firebase';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { ComponentComponent } from './component/component.component';
+import { ModalPagePage } from './modal-page/modal-page.page';
 
 @NgModule({
-  declarations: [AppComponent, ComponentComponent],
-  entryComponents: [],
+  declarations: [AppComponent],
+  entryComponents: [ ],
   imports: [BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
