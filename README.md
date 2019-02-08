@@ -1,7 +1,6 @@
 # Uicar
 
-Ionic 4 y firebase multiplatforma started kit with login and register with firebase
-This is a simple way to get a register and login with ionic 4 and firebase, we use the new router module 
+App for Car sharing 
 
 ## Setup 
 
