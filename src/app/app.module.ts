@@ -17,6 +17,9 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { ModalPagePage } from './modal-page/modal-page.page';
 
+
+import { Camera } from '@ionic-native/Camera/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [ ],
@@ -30,6 +33,7 @@ import { ModalPagePage } from './modal-page/modal-page.page';
   ],
   providers: [
     StatusBar,
+    Camera,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

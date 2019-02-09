@@ -8,4 +8,30 @@
 </ion-header>
 <ion-content padding>
     <h2 class="titulo">Editar usuario</h2>
+    <img (click)="cargarImagen()" (click)="agregarImagenUrl()" class="circle" src="/assets/icons/selectimage.png">
+
+    <br>
+    <br>
+    <br>
+    <div class="formulario">
+        <ion-item id="rounded">
+            <ion-input type="text" placeholder="Nombre" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item id="rounded">
+            <ion-input type="text" placeholder="Telefono" [(ngModel)]="telefono"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item id="rounded">
+            <ion-label style="color:grey;">Zona</ion-label>
+            <ion-select value="brown" okText="Hecho" cancelText="Cancelar" [(ngModel)]="zona">
+                <ion-select-option *ngFor="let item of zones" style="color:grey;" [value]="item.nombre">{{ item.nombre }}</ion-select-option>
+
+            </ion-select>
+        </ion-item>
+        <br>
+
+        <br>
+        <ion-button fill="solid" expand="block" color="primary" (click)="makepost()">Guardar</ion-button>
+    </div>
 </ion-content>

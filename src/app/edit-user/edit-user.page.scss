@@ -1,7 +1,39 @@
-.titulo {
-    text-align: center;
-    color: #E45454;
-    margin-top: -15px;
-    font-size: 27px;
-    font-weight: bold;
-}
+    .titulo {
+        text-align: center;
+        color: #E45454;
+        margin-top: -15px;
+        font-size: 27px;
+        font-weight: bold;
+    }
+    
+    .imagen {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+    
+    .formulario {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    ion-select-option {
+        color: grey;
+    }
+    
+    ion-button {
+        width: 80%;
+        margin-left: 10%;
+        height: 39px;
+        border-radius: 50px;
+        background-color: #E45454;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .circle {
+        display: block;
+        width: 60%;
+        margin-left: 22%;
+        margin-top: 20px;
+    }
