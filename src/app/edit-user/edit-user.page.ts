@@ -57,12 +57,12 @@ export class EditUserPage implements OnInit {
   }
 
   async makepost() {
-    const { nombre, telefono , zona  , url} = this;
+    const { nombre, telefono , zona  , url , img} = this;
     console.log(nombre, telefono , zona) ;
     await this.http.post('http://uicar.openode.io/edituser/', {
       nombre: nombre,
       uid: this.uid,
-      img: url,
+      img: img,
       ubication: zona,
       whatsapp: telefono
       }).subscribe((response) => {
