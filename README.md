@@ -20,3 +20,10 @@ You can tested in Ionic devapp
 
 
 <img src="https://github.com/davidbarrero38/Uicar/blob/master/src/assets/disen%CC%83o.png?raw=true">
+
+## TODO :
+
+[ ] Recarga de perfil constante 
+
+[ ] Whatsapp enlace que se abrá bien
+
