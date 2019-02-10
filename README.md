@@ -27,3 +27,8 @@ You can tested in Ionic devapp
 
 - Whatsapp enlace que se abrá bien
 
+- Mensaje de inicio de sesion 
+
+- Mensaje de error formulario de editar usuario
+
+- Editar usuario imagen
