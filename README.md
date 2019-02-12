@@ -32,3 +32,5 @@ You can tested in Ionic devapp
 - Mensaje de error formulario de editar usuario
 
 - Editar usuario imagen
+
+- Mapa
