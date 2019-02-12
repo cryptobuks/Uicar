@@ -19,7 +19,7 @@ You can tested in Ionic devapp
 ## Desing
 
 
-<img src="https://github.com/davidbarrero38/Uicar/blob/master/src/assets/disen%CC%83o.png?raw=true">
+<img src="https://github.com/davidbarrero38/Uicar/blob/master/src/assets/icons/canvas.png?raw=true">
 
 ## TODO :
 
