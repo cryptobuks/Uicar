@@ -1,0 +1,86 @@
+<ion-header no-border>
+    <ion-toolbar no-border>
+        <ion-buttons slot="start">
+            <ion-icon (click)="gotomain()" size="large" src="/assets/icons/left-arrow.svg" padding></ion-icon>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <h2 class="titulo">Crear trayecto</h2>
+    <br>
+    <div class="formulario">
+        <ion-item id="rounded">
+            <ion-label style="color:grey;">Inicio</ion-label>
+            <ion-select value="brown" okText="Hecho" cancelText="Cancelar" [(ngModel)]="inicio">
+                <ion-select-option *ngFor="let item of zones" style="color:grey;" [value]="item.nombre">{{ item.nombre }}</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <br>
+        <ion-item id="rounded">
+            <ion-label style="color:grey;">Destino</ion-label>
+            <ion-select value="brown" okText="Hecho" cancelText="Cancelar" [(ngModel)]="destino">
+                <ion-select-option *ngFor="let item of zones" style="color:grey;" [value]="item.nombre">{{ item.nombre }}</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <br>
+
+        <ion-row>
+            <ion-col size="6">
+                <ion-item id="rounded">
+                    <ion-label style="color:grey;">Hora</ion-label>
+                    <ion-select value="brown" okText="Hecho" cancelText="Cancelar" [(ngModel)]="hora">
+                        <ion-select-option *ngFor="let item of horas" style="color:grey;" [value]="item">{{ item }}</ion-select-option>
+                    </ion-select>
+                </ion-item>
+
+                <ion-col size="6">
+                    <ion-item>
+                        <ion-label style="color:grey;" position="floating">Nº Asientos</ion-label>
+                        <ion-input [(ngModel)]="asientos"></ion-input>
+                    </ion-item>
+                </ion-col>
+
+
+            </ion-col>
+            <ion-col size="6" size-lg>
+                <ion-list>
+                    <ion-item *ngFor="let entry of form">
+                        <ion-label style="color:grey;">{{entry.val}}</ion-label>
+                        <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+                    </ion-item>
+                </ion-list>
+
+            </ion-col>
+        </ion-row>
+        <ion-row>
+
+            <ion-col size="6" size-lg>
+
+
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="3" size-sm>
+                <ion-icon [class.labe]="vehiculo === 'car'" (click)="select('car')" style="font-size:50px;" src="/assets/icons/car.svg" padding></ion-icon>
+            </ion-col>
+            <ion-col size="3" size-sm>
+                <ion-icon [class.labe]="vehiculo === 'motorcycle'" (click)="select('motorcycle')" style="font-size:50px;" src="/assets/icons/motorcycle.svg" padding></ion-icon>
+
+            </ion-col>
+            <ion-col size="3" size-sm>
+
+            </ion-col>
+            <ion-col size="3" size-sm>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-item>
+            <ion-label style="color:grey;" position="floating">Description</ion-label>
+            <ion-textarea [(ngModel)]="descripcion"></ion-textarea>
+        </ion-item>
+        <br>
+        <ion-button (click)="makepost()" fill="solid" expand="block" color="primary">Guardar</ion-button>
+    </div>
+</ion-content>

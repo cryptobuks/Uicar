@@ -64,6 +64,9 @@ export class ProfilePagePage implements OnInit {
   gotoedit() {
     this.router.navigateByUrl('/edituser/' + this.uid);
   }
+  gotocreate() {
+    this.router.navigateByUrl('/create');
+  }
 
   checkuser(uid: string) {
     if ( uid === this.uidprofile ) {

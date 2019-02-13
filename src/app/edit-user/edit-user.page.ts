@@ -42,6 +42,9 @@ export class EditUserPage implements OnInit {
   gotouser() {
     this.router.navigateByUrl('/profile/' + this.uid);
   }
+  gotocreate() {
+    this.router.navigateByUrl('/create/');
+  }
   async cargaruid() {
     await this.active.params.subscribe((data2: any) => {
       this.uidprofile = data2.id;
