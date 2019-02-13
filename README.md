@@ -34,3 +34,8 @@ You can tested in Ionic devapp
 - Editar usuario imagen
 
 - Mapa
+
+
+## Repos :
+
+https://github.com/ionic-team/ionic-native-google-maps
