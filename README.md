@@ -23,7 +23,7 @@ You can tested in Ionic devapp
 
 ## TODO :
 
-- Recarga de perfil constante 
+- Recarga de perfil constante  ✔️ 
 
 - Whatsapp enlace que se abrá bien
 
